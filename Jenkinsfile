@@ -18,9 +18,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir('/var/lib/jenkins/workspace/Microservice_Deployment/src/adservice/') {
-                        sh "docker build -t tkibnyusuf/adservice:latest ."
-                        sh "docker push tkibnyusuf/adservice:latest"
-                        sh "docker rmi tkibnyusuf/adservice:latest"
+                        sh "docker build -t bisi23/adservice:latest ."
+                        sh "docker push bisi23/adservice:latest"
+                        sh "docker rmi bisi23/adservice:latest"
                     }
                 }
             }
@@ -31,9 +31,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/cartservice/src/") {
-                        sh "docker build -t tkibnyusuf/cartservice:latest ."
-                        sh "docker push tkibnyusuf/cartservice:latest"
-                        sh "docker rmi tkibnyusuf/cartservice:latest"
+                        sh "docker build -t bisi23/cartservice:latest ."
+                        sh "docker push bisi23/cartservice:latest"
+                        sh "docker rmi bisi23/cartservice:latest"
                     }
                 }
             }
@@ -44,9 +44,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/checkoutservice/") {
-                        sh "docker build -t tkibnyusuf/checkoutservice:latest ."
-                        sh "docker push tkibnyusuf/checkoutservice:latest"
-                        sh "docker rmi tkibnyusuf/checkoutservice:latest"
+                        sh "docker build -t bisi23/checkoutservice:latest ."
+                        sh "docker push bisi23/checkoutservice:latest"
+                        sh "docker rmi bisi23/checkoutservice:latest"
                     }
                 }
             }
@@ -57,9 +57,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/currencyservice/") {
-                        sh "docker build -t tkibnyusuf/currencyservice:latest ."
-                        sh "docker push tkibnyusuf/currencyservice:latest"
-                        sh "docker rmi tkibnyusuf/currencyservice:latest"
+                        sh "docker build -t bisi23/currencyservice:latest ."
+                        sh "docker push bisi23/currencyservice:latest"
+                        sh "docker rmi bisi23/currencyservice:latest"
                     }
                 }
             }
@@ -71,9 +71,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/emailservice/") {
-                        sh "docker build -t tkibnyusuf/emailservice:latest ."
-                        sh "docker push tkibnyusuf/emailservice:latest"
-                        sh "docker rmi tkibnyusuf/emailservice:latest"
+                        sh "docker build -t bisi23/emailservice:latest ."
+                        sh "docker push bisi23/emailservice:latest"
+                        sh "docker rmi bisi23/emailservice:latest"
                     }
                 }
             }
@@ -84,9 +84,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/frontend/") {
-                        sh "docker build -t tkibnyusuf/frontend:latest ."
-                        sh "docker push tkibnyusuf/frontend:latest"
-                        sh "docker rmi tkibnyusuf/frontend:latest"
+                        sh "docker build -t bisi23/frontend:latest ."
+                        sh "docker push bisi23/frontend:latest"
+                        sh "docker rmi bisi23/frontend:latest"
                     }
                 }
             }
@@ -97,9 +97,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/loadgenerator/") {
-                        sh "docker build -t tkibnyusuf/loadgenerator:latest ."
-                        sh "docker push tkibnyusuf/loadgenerator:latest"
-                        sh "docker rmi tkibnyusuf/loadgenerator:latest"
+                        sh "docker build -t bisi23/loadgenerator:latest ."
+                        sh "docker push bisi23/loadgenerator:latest"
+                        sh "docker rmi bisi23/loadgenerator:latest"
                     }
                 }
             }
@@ -110,9 +110,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/paymentservice/") {
-                        sh "docker build -t tkibnyusuf/paymentservice:latest ."
-                        sh "docker push tkibnyusuf/paymentservice:latest"
-                        sh "docker rmi tkibnyusuf/paymentservice:latest"
+                        sh "docker build -t bisi23/paymentservice:latest ."
+                        sh "docker push bisi23/paymentservice:latest"
+                        sh "docker rmi bisi23/paymentservice:latest"
                     }
                 }
             }
@@ -123,9 +123,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/productcatalogservice/") {
-                        sh "docker build -t tkibnyusuf/productcatalogservice:latest ."
-                        sh "docker push tkibnyusuf/productcatalogservice:latest"
-                        sh "docker rmi tkibnyusuf/productcatalogservice:latest"
+                        sh "docker build -t bisi23/productcatalogservice:latest ."
+                        sh "docker push bisi23/productcatalogservice:latest"
+                        sh "docker rmi bisi23/productcatalogservice:latest"
                     }
                 }
             }
@@ -136,9 +136,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/recommendationservice/") {
-                        sh "docker build -t tkibnyusuf/recommendationservice:latest ."
-                        sh "docker push tkibnyusuf/recommendationservice:latest"
-                        sh "docker rmi tkibnyusuf/recommendationservice:latest"
+                        sh "docker build -t bisi23/recommendationservice:latest ."
+                        sh "docker push bisi23/recommendationservice:latest"
+                        sh "docker rmi bisi23/recommendationservice:latest"
                     }
                 }
             }
@@ -149,9 +149,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/shippingservice/") {
-                        sh "docker build -t tkibnyusuf/shippingservice:latest ."
-                        sh "docker push tkibnyusuf/shippingservice:latest"
-                        sh "docker rmi tkibnyusuf/shippingservice:latest"
+                        sh "docker build -t bisi23/shippingservice:latest ."
+                        sh "docker push bisi23/shippingservice:latest"
+                        sh "docker rmi bisi23/shippingservice:latest"
                     }
                 }
             }
