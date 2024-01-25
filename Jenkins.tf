@@ -59,6 +59,13 @@ resource "aws_security_group" "ec2_security_group4" {
     cidr_blocks      = ["0.0.0.0/0"]
   }
 
+ingress {
+    description      = "http proxy access"
+    from_port        = 9000
+    to_port          = 9000
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+  } 
   
    ingress {
     description      = "https access"
