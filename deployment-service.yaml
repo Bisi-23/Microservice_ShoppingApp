@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: tkibnyusuf/adservice:latest
+        image: bisi23/adservice:latest
         ports:
         - containerPort: 9555
         env:
@@ -97,7 +97,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: tkibnyusuf/cartservice:latest
+        image: bisi23/cartservice:latest
         ports:
         - containerPort: 7070
         env:
@@ -162,7 +162,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: tkibnyusuf/checkoutservice:latest
+          image: bisi23/checkoutservice:latest
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -237,7 +237,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: tkibnyusuf/currencyservice:latest
+        image: bisi23/currencyservice:latest
         ports:
         - name: grpc
           containerPort: 7000
@@ -304,7 +304,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: tkibnyusuf/emailservice:latest
+        image: bisi23/emailservice:latest
         ports:
         - containerPort: 8080
         env:
@@ -373,7 +373,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: tkibnyusuf/frontend:latest
+          image: bisi23/frontend:latest
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -483,7 +483,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: tkibnyusuf/loadgenerator:latest
+        image: bisi23/loadgenerator:latest
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -527,7 +527,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: tkibnyusuf/paymentservice:latest
+        image: bisi23/paymentservice:latest
         ports:
         - containerPort: 50051
         env:
@@ -592,7 +592,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: tkibnyusuf/productcatalogservice:latest
+        image: bisi23/productcatalogservice:latest
         ports:
         - containerPort: 3550
         env:
@@ -657,7 +657,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: tkibnyusuf/recommendationservice:latest
+        image: bisi23/recommendationservice:latest
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -792,7 +792,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: tkibnyusuf/shippingservice:latest
+        image: bisi23/shippingservice:latest
         ports:
         - containerPort: 50051
         env:
