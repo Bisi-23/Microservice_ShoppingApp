@@ -17,7 +17,7 @@ pipeline {
               steps {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
-                    dir('/var/lib/jenkins/workspace/Microservice_Deployment/src/adservice/') {
+                    dir('/var/lib/jenkins/workspace/shopshop/src/adservice/') {
                         sh "docker build -t bisi23/adservice:latest ."
                         sh "docker push bisi23/adservice:latest"
                         sh "docker rmi bisi23/adservice:latest"
@@ -30,7 +30,7 @@ pipeline {
               steps {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
-                    dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/cartservice/src/") {
+                    dir('/var/lib/jenkins/workspace/shopshop/src/cartservice/") {
                         sh "docker build -t bisi23/cartservice:latest ."
                         sh "docker push bisi23/cartservice:latest"
                         sh "docker rmi bisi23/cartservice:latest"
@@ -43,7 +43,7 @@ pipeline {
               steps {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
-                    dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/checkoutservice/") {
+                    dir('/var/lib/jenkins/workspace/shopshop/src/checkoutservice/") {
                         sh "docker build -t bisi23/checkoutservice:latest ."
                         sh "docker push bisi23/checkoutservice:latest"
                         sh "docker rmi bisi23/checkoutservice:latest"
@@ -56,7 +56,7 @@ pipeline {
               steps {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
-                    dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/currencyservice/") {
+                    dir('/var/lib/jenkins/workspace/shopshop/src/currencyservice/") {
                         sh "docker build -t bisi23/currencyservice:latest ."
                         sh "docker push bisi23/currencyservice:latest"
                         sh "docker rmi bisi23/currencyservice:latest"
@@ -70,7 +70,7 @@ pipeline {
               steps {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
-                    dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/emailservice/") {
+                    dir('/var/lib/jenkins/workspace/shopshop/src/emailservice/") {
                         sh "docker build -t bisi23/emailservice:latest ."
                         sh "docker push bisi23/emailservice:latest"
                         sh "docker rmi bisi23/emailservice:latest"
@@ -83,7 +83,7 @@ pipeline {
               steps {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
-                    dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/frontend/") {
+                    dir('/var/lib/jenkins/workspace/shopshop/src/frontend/") {
                         sh "docker build -t bisi23/frontend:latest ."
                         sh "docker push bisi23/frontend:latest"
                         sh "docker rmi bisi23/frontend:latest"
@@ -96,7 +96,7 @@ pipeline {
               steps {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
-                    dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/loadgenerator/") {
+                    dir('/var/lib/jenkins/workspace/shopshop/src/loadgenerator/") {
                         sh "docker build -t bisi23/loadgenerator:latest ."
                         sh "docker push bisi23/loadgenerator:latest"
                         sh "docker rmi bisi23/loadgenerator:latest"
@@ -109,7 +109,7 @@ pipeline {
               steps {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
-                    dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/paymentservice/") {
+                    dir('/var/lib/jenkins/workspace/shopshop/src/paymentservice/") {
                         sh "docker build -t bisi23/paymentservice:latest ."
                         sh "docker push bisi23/paymentservice:latest"
                         sh "docker rmi bisi23/paymentservice:latest"
@@ -122,7 +122,7 @@ pipeline {
               steps {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
-                    dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/productcatalogservice/") {
+                    dir('/var/lib/jenkins/workspace/shopshop/src/productcatalogservice/") {
                         sh "docker build -t bisi23/productcatalogservice:latest ."
                         sh "docker push bisi23/productcatalogservice:latest"
                         sh "docker rmi bisi23/productcatalogservice:latest"
@@ -135,7 +135,7 @@ pipeline {
               steps {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
-                    dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/recommendationservice/") {
+                    dir('/var/lib/jenkins/workspace/shopshop/src/recommendationservice/") {
                         sh "docker build -t bisi23/recommendationservice:latest ."
                         sh "docker push bisi23/recommendationservice:latest"
                         sh "docker rmi bisi23/recommendationservice:latest"
@@ -148,7 +148,7 @@ pipeline {
               steps {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
-                    dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/shippingservice/") {
+                    dir('/var/lib/jenkins/workspace/shopshop/src/shippingservice/") {
                         sh "docker build -t bisi23/shippingservice:latest ."
                         sh "docker push bisi23/shippingservice:latest"
                         sh "docker rmi bisi23/shippingservice:latest"
