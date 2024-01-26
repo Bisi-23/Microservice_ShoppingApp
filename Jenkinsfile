@@ -30,7 +30,7 @@ pipeline {
               steps {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
-                    dir('/var/lib/jenkins/workspace/shopshop/src/cartservice/") {
+                    dir('/var/lib/jenkins/workspace/shopshop/src/cartservice/src/") {
                         sh "docker build -t bisi23/cartservice:latest ."
                         sh "docker push bisi23/cartservice:latest"
                         sh "docker rmi bisi23/cartservice:latest"
